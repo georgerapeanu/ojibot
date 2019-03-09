@@ -3,8 +3,6 @@ import argparse
 import time
 import os.path
 
-subprocess.call("rm log.txt",shell = True);
-
 parser = argparse.ArgumentParser()
 parser.add_argument("--year",type=str,help="year of oji",required=True)
 parser.add_argument("--sub_category",type=str,help="lic or gim",required=True)
@@ -33,3 +31,5 @@ while(os.path.exists("./log.txt") == False):
 print("done\n");
 subprocess.call("cat ./log.txt",shell = True);
 subprocess.call("rm -r __pycache__",shell = True);
+subprocess.call("rm log.txt",shell = True);
+
