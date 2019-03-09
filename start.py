@@ -32,3 +32,4 @@ while(os.path.exists("./log.txt") == False):
 
 print("done\n");
 subprocess.call("cat ./log.txt",shell = True);
+subprocess.call("rm -r __pycache__",shell = True);
